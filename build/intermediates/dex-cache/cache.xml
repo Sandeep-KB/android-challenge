@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\kbsan\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
+        <dex dex="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\pre-dexed\debug\gson-2.2.2-64b2c6db69823bc5bcc1e38c171ea3ab65fd0a20.jar" />
+    </item>
+    <item
+        jar="C:\Users\kbsan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-5d4cfe6fa84a70112b7c8285453ac6c017f79f2f.jar" />
+    </item>
+    <item
+        jar="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\pre-dexed\debug\classes-8d0f5e5d6c4f5e02cb731b9e7b40e91db8b8990e.jar" />
+    </item>
+    <item
+        jar="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-a516edb8a4623ecb3f9ea648e0abfc4688ff2828.jar" />
+    </item>
+    <item
+        jar="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\pre-dexed\debug\classes-d4e00f0da11a4ada9764ee4d89e657746197cc79.jar" />
+    </item>
+    <item
+        jar="C:\Users\kbsan\.gradle\caches\modules-2\files-2.1\org.eclipse.mylyn.github\org.eclipse.egit.github.core\2.1.5\e1c010e279ff0355a996f00b71512a8636e681d7\org.eclipse.egit.github.core-2.1.5.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e1c010e279ff0355a996f00b71512a8636e681d7">
+        <dex dex="C:\Users\kbsan\AndroidStudioProjects\AndroidChallenge2\app\build\intermediates\pre-dexed\debug\org.eclipse.egit.github.core-2.1.5-e032b5a6d6d57000b826e9370a15f166dc6c6bf7.jar" />
+    </item>
+
+</items>
