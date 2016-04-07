@@ -1,6 +1,6 @@
 package loktra.com.androidchallenge;
 
-import android.app.ListActivity;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -17,20 +17,22 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-public class MainActivity extends ListActivity {
+public class MainActivity extends Activity {
     ListView listView;
     List<ListModel> rowItems;
+    CustomRowAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
         Log.d("Sandeep", "app started");
-
-
-
+        listView = (ListView) findViewById(R.id.listView);
+        rowItems = new ArrayList<ListModel>();
+        adapter = new CustomRowAdapter(this, rowItems);
         GetGitTask task = new GetGitTask();
         task.execute();
+        listView.setAdapter(adapter);
 
 
        // listView.setOnItemClickListener(this);
@@ -44,7 +46,6 @@ public class MainActivity extends ListActivity {
       protected void onPreExecute()
       {
           progressDialog= ProgressDialog.show(MainActivity.this, "Loading","Loading git commits", true);
-          rowItems = new ArrayList<ListModel>();
       };
 
 
@@ -53,16 +54,11 @@ public class MainActivity extends ListActivity {
       {
           super.onPostExecute(result);
           progressDialog.dismiss();
-          if(rowItems.size()==0){
+          if(rowItems.size()==0) {
               Log.d("Sandeep", "Making toast");
               Toast.makeText(getBaseContext(), result, Toast.LENGTH_LONG).show();
           }
-            else {
-              listView = (ListView) findViewById(R.id.list);
-              Log.d("Sandeep", "Length of rowItems=" + rowItems.size());
-              CustomRowAdapter adapter = new CustomRowAdapter(MainActivity.this, rowItems);
-              listView.setAdapter(adapter);
-          }
+          adapter.notifyDataSetChanged();
       };
 
       @Override
